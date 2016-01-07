@@ -1,0 +1,24 @@
+{
+  "name": "XSockets.NET screenshare extension",
+  "version": "0.0.2",
+  "manifest_version": 2,
+  "description": "Video/Audio conference in your browser by Magnus Thor - Screensharing extention",  
+
+  "background": {
+         "scripts": [ "js/app.js"],
+        "persistent": false
+  },
+  "permissions": [
+    "tabs", "https://*/*",
+    "desktopCapture", "activeTab", "contextMenus"
+  ],
+  "browser_action": {
+    "default_title": ""
+   
+  },
+  "externally_connectable": {
+  "matches": ["https://localhost:*/*","https://somewhere.net/*"]
+},
+ 
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
