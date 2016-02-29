@@ -8,10 +8,10 @@ Where `rtc` is your instance of `XSockets.WebRTC`
 
     
 
-   var $ = function(selector,context){
+       var $ = function(selector,context){
      		if(!context) context = document;
      		return context.querySelector(selector);
-    }; 
+        }; 
 
     if (chrome.runtime) {
 
