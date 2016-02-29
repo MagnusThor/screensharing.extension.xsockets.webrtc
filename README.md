@@ -4,9 +4,14 @@ This repo contains a screensharing Chrome Extension.
 
 ##Using the extension 
 
-Where `rtc` is your instance of `XSockets.WebRTC`
+Where `rtc` is your instance of `XSockets.WebRTC` 
 
     
+
+   var $ = function(selector,context){
+     		if(!context) context = document;
+     		return context.querySelector(selector);
+    }; 
 
     if (chrome.runtime) {
 
